@@ -4,6 +4,31 @@
   <meta charset="UTF-8">
   <title>Our Products</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .product-card {
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      width: 250px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .product-card h3 {
+      margin-top: 10px;
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -15,43 +40,38 @@
 
   <header>
     <h1>Our Products</h1>
-    <p>Explore our educational supplies for science and learning</p>
+    <p>Explore our educational supplies by category</p>
   </header>
 
   <section>
-    <h2>Glassware</h2>
-    <ul>
-      <li>Beakers – 100ml, 250ml, 500ml</li>
-      <li>Graduated Cylinders – plastic & glass</li>
-      <li>Test Tubes – borosilicate, assorted sizes</li>
-    </ul>
-  </section>
+    <h2>Product Categories</h2>
+    <div class="product-grid">
 
-  <section>
-    <h2>Student Kits</h2>
-    <ul>
-      <li>Basic Lab Starter Kit for students</li>
-      <li>Microscope Exploration Kit</li>
-      <li>Physics Starter Pack</li>
-    </ul>
-  </section>
+      <div class="product-card">
+        <img src="glassware_image.png" alt="Beaker Glassware">
+        <h3>Glassware</h3>
+        <p>Beakers, test tubes, cylinders & more for lab use.</p>
+      </div>
 
-  <section>
-    <h2>Chemistry</h2>
-    <ul>
-      <li>Chemical Reagent Sets (safe for schools)</li>
-      <li>Periodic Table Posters</li>
-      <li>PH Test Strips & Color Charts</li>
-    </ul>
-  </section>
+      <div class="product-card">
+        <img src="student_kit_image.png" alt="Student Kit">
+        <h3>Student Kits</h3>
+        <p>Starter kits including microscope, slides & tools.</p>
+      </div>
 
-  <section>
-    <h2>Biology</h2>
-    <ul>
-      <li>Prepared Microscope Slides – Plants & Animals</li>
-      <li>Dissection Tools Set</li>
-      <li>3D Biological Models (Heart, Eye, Cell, etc.)</li>
-    </ul>
+      <div class="product-card">
+        <img src="chemistry_image.png" alt="Chemistry Set">
+        <h3>Chemistry</h3>
+        <p>Safe reagent sets, test strips & lab chemicals.</p>
+      </div>
+
+      <div class="product-card">
+        <img src="biology_image.png" alt="Biology Slides">
+        <h3>Biology</h3>
+        <p>Prepared slides, dissection kits & 3D models.</p>
+      </div>
+
+    </div>
   </section>
 
   <footer>
