@@ -1,9 +1,9 @@
 body {
-  background: url('https://www.transparenttextures.com/patterns/lined-paper.png');
-  background-size: cover;
-  background-attachment: fixed;
-  color: #333;
   font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(to bottom, #ffffff, #e6f0ff);
+  color: #333;
+  text-align: center;
 }
 
 nav {
@@ -15,15 +15,17 @@ nav a {
   color: white;
   margin: 0 15px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 header {
   background: #ddd;
-  padding: 20px;
+  padding: 30px 20px;
 }
 
 section {
-  padding: 20px;
+  padding: 30px 20px;
+  text-align: center;
 }
 
 footer {
@@ -32,37 +34,14 @@ footer {
   padding: 10px;
 }
 
-input, textarea {
-  width: 80%;
-  padding: 10px;
-  margin: 10px auto;
-  display: block;
+ul {
+  list-style: disc;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #555;
-}
-
-@media (max-width: 768px) {
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  header, section {
-    padding: 10px;
-  }
-
-  img {
-    width: 90%;
-    height: auto;
-  }
+img {
+  margin-top: 20px;
+  max-width: 100%;
 }
