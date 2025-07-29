@@ -1,9 +1,9 @@
 body {
-  font-family: Arial;
-  margin: 0;
-  background-color: #f4f4f4;
+  background: url('https://www.transparenttextures.com/patterns/lined-paper.png');
+  background-size: cover;
+  background-attachment: fixed;
   color: #333;
-  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 nav {
